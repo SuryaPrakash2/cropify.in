@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="formula.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+ 
+  <title>Cropify</title>
+</head>
+
+<body>
+  <div class="">
+    <h2>Numpy Library</h2>
+    <p>NumPy is a Python library used for working with arrays.
+      It also has functions for working in domain of linear algebra, fourier transform, and matrices.
+      NumPy was created in 2005 by Travis Oliphant. It is an open source project and you can use it freely.
+      NumPy stands for Numerical Python.</p>
+    <h3>Uses of Numpy</h3>
+    <ul>
+      <li>In Python we have lists that serve the purpose of arrays, but they are slow to process.</li>
+      <li>NumPy aims to provide an array object that is up to 50x faster than traditional Python lists.</li>
+      <li>The array object in NumPy is called <em>ndarray</em>, it provides a lot of supporting functions that make working with <em>ndarray</em> very easy.</li>
+      <li>Arrays are very frequently used in data science, where speed and resources are very important.</li>
+    </ul>
+  </div>
+  <div class="">
+    <h2>Pandas</h2>
+    <p>Pandas is a Python package that provides fast, flexible, and expressive data structures designed to make
+      working with "relational" or "labeled" data both easy and intuitive.
+      It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python.
+      Additionally, it has the broader goal of becoming the most powerful and flexible
+      open source data analysis / manipulation tool available in any language. It is already well on its way towards this goal.
+    </p>
+    <h3>Things you can do with pandas</h3>
+    <ul>
+      <li>Easy handling of missing data (represented as <em>NaN</em>, <em>NA</em>, or <em>NaT</em>) in floating point as well as non-floating point data.</li>
+      <li>Size mutability: columns can be <strong>inserted</strong>  and <strong>deleted</strong> from DataFrame and higher dimensional objects.</li>
+      <li>Intelligent label-based <strong>slicing</strong>, fancy <strong>indexing</strong>, and <strong>subsetting</strong> of large data sets.</li>
+      <li>Intuitive <strong>merging</strong> and <strong>joining</strong> data sets.</li>
+      <li>Flexible <strong>reshaping</strong> and <strong>pivoting</strong> of data sets.</li>
+    </ul>
+  </div>
+  <div class="">
+    <h2>Matplotlib</h2>
+    <p>Matplotlib is a cross-platform, data visualization and graphical plotting library for Python and its numerical extension NumPy.
+      As such, it offers a viable open source alternative to MATLAB.
+      Developers can also use matplotlib’s APIs (Application Programming Interfaces) to embed plots in GUI applications.</p>
+      <h4>A Python matplotlib script is structured so that a few lines of code are all that is required in most instances to generate a visual data plot.</h4>
+      <h4>The matplotlib scripting layer overlays two APIs:</h4>
+      <ul>
+        <li>The pyplot API is a hierarchy of Python code objects topped by <em>matplotlib.pyplot</em></li>
+        <li>An OO (Object-Oriented) API collection of objects that can be assembled with greater flexibility than pyplot. This API provides direct access to Matplotlib’s backend layers.</li>
+      </ul>
+  </div>
+  <div class="">
+    <h2>Sklearn-preprocessing-Label encoder</h2>
+    <p>class sklearn.preprocessing.LabelEncoder[source]</p>
+    <p>Encode target labels with value between 0 and n_classes-1.
+      This transformer should be used to encode target values, i.e. y, and not the input X.</p>
+      <table>
+        <thead>
+          <h3>Methods</h3>
+        </thead>
+        <tr>
+          <th>fit(y)</th>
+          <td>Fit label encoder.</td>
+        </tr>
+        <tr>
+          <th>fit_transform(y)</th>
+          <td>Fit label encoder and return encoded labels.</td>
+        </tr>
+        <tr>
+          <th>get_params([deep])</th>
+          <td>Get parameters for this estimator.</td>
+        </tr>
+        <tr>
+          <th>inverse_transform(y)</th>
+          <td>Transform labels back to original encoding.</td>
+        </tr>
+        <tr>
+          <th>set_params(**params)</th>
+          <td>Set the parameters of this estimator.</td>
+        </tr>
+        <tr>
+          <th>transform(y)</th>
+          <td>Transform labels to normalized encoding.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="">
+    <h2>Sklearn-modelselection-train test split</h2>
+    <p>sklearn.model_selection.train_test_split(*arrays, test_size=None, train_size=None, random_state=None, shuffle=True, stratify=None)[source]</p>
+    <ul>
+      <li>Split arrays or matrices into random train and test subsets.</li>
+      <li>Quick utility that wraps input validation and <em>next(ShuffleSplit().split(X, y))</em> and application to input data into a single call for splitting (and optionally subsampling) data in a oneliner.</li>
+    </ul>
+  </div>
+  <div class="">
+    <h2>Sklearn -linearmodel-linear regression</h2>
+    <p>class sklearn.linear_model.LinearRegression(*, fit_intercept=True, normalize='deprecated', copy_X=True, n_jobs=None, positive=False)[source]</p>
+    <p>LinearRegression fits a linear model with coefficients w = (w1, …, wp) to minimize the residual sum of squares between the observed targets in the dataset, and the targets predicted by the linear approximation.</p>
+    <table>
+      <thead>
+       <h3>Methods</h3> 
+      </thead>
+      <tr>
+        <th>fit(X, y[, sample_weight])</th>
+        <td>Fit linear model.</td>
+      </tr>
+      <tr>
+        <th>get_params([deep])</th>
+        <td>Get parameters for this estimator.</td>
+      </tr>
+      <tr>
+        <th>predict(X)</th>
+        <td>Predict using the linear model.</td>
+      </tr>
+      <tr>
+        <th>score(X, y[, sample_weight])</th>
+        <td>Return the coefficient of determination of the prediction.</td>
+      </tr>
+      <tr>
+        <th>set_params(**params)</th>
+        <td>Set the parameters of this estimator.</td>
+      </tr>
+    </table>
+  </div>
+  <div class="">
+    <h2>Label encoder-fit_transform</h2>
+    <p>fit_transform(y)[source]</p>
+    <p>Fit label encoder and return encoded labels.</p>
+    <h3>Parameters:</h3>
+    <p>yarray-like of shape (n_samples,)  -  Target values</p>
+    <h3>Returns:</h3>
+    <p>yarray-like of shape (n_samples,)  -  Encoded labels.</p>
+  </div>
+</body>
+
+</html>

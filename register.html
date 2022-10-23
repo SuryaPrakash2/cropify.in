@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.jpeg">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>Cropify</title>
+</head>
+<body>
+    <video style="z-index: -1;" playsinline autoplay muted loop id="video">
+        <source src="img/ricefield.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>  
+    
+    <h1 style="color: white;">Cropify.in</h1>
+    <div class="container">
+   
+        <div class="login-content"> 
+          <form  action="" method="get">
+            <img src="img/logo.jpeg" style="border-radius: 100px;">
+            <h2 class="title">Sign up</h2>
+            <div class="input-div one">
+                <div class="i">
+                        <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                        <h5>Username</h5>
+                        <input type="text" class="input">
+                </div>
+             </div>
+             <div class="input-div two">
+              <div class="i">
+                  <i class="fas fa-envelope"></i>
+              </div>
+              <div class="div">
+                      <h5>Email</h5>
+                      <input type="email" class="input">
+              </div>
+           </div>
+             <div class="input-div pass">
+                <div class="i"> 
+                     <i class="fas fa-lock"></i>
+                </div>
+                <div class="div">
+                     <h5>Password</h5>
+                     <input type="password" class="input">
+             </div>
+          </div>
+          
+         <!-- <input type="submit" class="btn" value="Sign up"> -->
+          <!-- <input type="submit" class="btn" value="sign up" >
+          <p class="social-text">Or Sign up with social platforms</p>
+          <div class="social-media">
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a> -->
+            <br>
+            <img id="captcha" style="width: 130px; height: 60px;">
+            <div class="form-control">
+                <input type="text" id="enteredcaptcha" placeholder="Enter Captcha" required  class="z"/>                                
+            </div>
+            <!-- <a id="verifier" onclick="verify()" href="#"><button class="login-btn" type="button">Login</button></a> -->
+            <a id="verifier" onclick="verify()" href=""></a><input type="submit" class="btn"  value="Login"></a>
+          </form>
+     
+        </div>
+      </div>
+   
+          <script type="text/javascript" src="register.js"></script>
+</body>
+</html>

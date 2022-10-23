@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.jpeg">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>Cropify</title>
+</head>
+<body>
+  <h1 style="color: white;">Cropify.in</h1>
+    <video style="z-index: -1;" playsinline autoplay muted loop id="video">
+        <source src="img/Grain.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>  
+    
+    <div class="container">
+        <div class="r" style="z-index: 5px;">
+            <!-- <img src="img/bg.svg"> -->
+            <p style="font-size: 40px; font-weight:bolder;">New Here! Get started with Cropify.</p>
+            <a href="register.html" > <input type="submit" class="p" value="sign up" ></a>
+        </div>
+        <div class="login-content"> 
+          <form  action="" method="get">
+            <img src="img/logo.jpeg" style="border-radius: 100px;">
+            <h2 class="title">Sign in</h2>
+               <div class="input-div one">
+                  <div class="i">
+                          <i class="fas fa-user"></i>
+                  </div>
+                  <div class="div">
+                          <h5>Username</h5>
+                          <input type="text" class="input">
+                  </div>
+               </div>
+               <div class="input-div pass">
+                  <div class="i"> 
+                       <i class="fas fa-lock"></i>
+                  </div>
+                  <div class="div">
+                       <h5>Password</h5>
+                       <input type="password" class="input">
+               </div>
+            </div>
+            <a href="#">Forgot Password?</a>
+            <!-- <a id="verifier" onclick="verify()" href="#"></a><input type="submit" class="btn" id="enteredcaptcha" value="Login"></a> -->
+            <!-- <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="home.html" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div> -->
+            <br>
+            <img id="captcha" style="width: 130px; height: 60px;">
+            <div class="form-control">
+                <input type="text" id="enteredcaptcha" placeholder="Enter Captcha" required  class="z"/>                                
+            </div>
+            <!-- <a id="verifier" onclick="verify()" href="#"><button class="login-btn" type="button">Login</button></a> -->
+            <a id="verifier" onclick="verify()" href="#"></a><input type="submit" class="btn"  value="Login"></a>
+          </form>
+     
+        </div>
+      </div>
+   
+      <script type="text/javascript" src="login.js"></script>
+</body>
+</html>

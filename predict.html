@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="predict.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.jpeg">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+   
+    <title>Cropify</title>
+</head>
+<body id="up">
+    <nav class="navbar">
+       
+        <p style="font-size: 32px;">Cropify.in</p>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="home.html" >Home</a></li>
+            <li><a href="predict.html" id="x">Predict</a></li>
+            <li><a href="construction.html">Dictionary</a></li>
+            <li><a href="home.html#con">Contact</a></li>
+            <li><a href="http://localhost/feedback.php">Feedback</a></li>
+          </div>
+        </ul>
+      </nav>
+      <form id="form" action="/predict">
+       
+        <!-- Details -->
+        <div class="form-control">
+            <label for="n" id="label-name">
+                Value for nitrogen       <p style="color: red; display:inline;">*</p>
+            </label>
+     
+            <!-- Input Type Text -->
+            <input type="number"
+                   id="name"
+                   placeholder="Enter value for nitrogen" />
+        </div>
+        <div class="form-control" >
+            <label for="p" id="label-name">
+                Value for phosphorous       <p style="color: red; display:inline;">*</p>
+            </label>
+     
+            <!-- Input Type Text -->
+            <input type="number"
+                   id="p"
+                   placeholder="Enter value for phosphorous" />
+        </div>
+        <div class="form-control">
+            <label for="k" id="label-name">
+                Value for potassium      <p style="color: red; display:inline;">*</p>
+            </label>
+     
+            <!-- Input Type Text -->
+            <input type="number"
+                   id="k"
+                   placeholder="Enter value for potassium" />
+        </div>
+
+        <div class="form-control">
+            <label for="t" id="label-name">
+                Value for temperature      <p style="color: red; display:inline;">*</p>
+            </label>
+     
+            <!-- Input Type Text -->
+            <input type="number"
+                   id="t"
+                   placeholder="Enter value for temperature" />
+        </div>
+
+        <div class="form-control">
+            <label for="h" id="label-name">
+                Value for humidity      <p style="color: red; display:inline;">*</p>
+            </label>
+     
+            <!-- Input Type Text -->
+            <input type="number"
+                   id="h"
+                   placeholder="Enter value for humidity" />
+        </div>
+
+        <div class="form-control">
+            <label for="ph" id="label-name">
+                Value for pH      <p style="color: red; display:inline;">*</p>
+            </label>
+     
+            <!-- Input Type Text -->
+            <input type="number"
+                   id="ph"
+                   placeholder="Enter value for pH" />
+        </div>
+
+
+        <div class="form-control">
+            <label for="r" id="label-name">
+                Value for rainfall     <p style="color: red; display:inline;">*</p>
+            </label>
+     
+            <!-- Input Type Text -->
+            <input type="number"
+                   id="r"
+                   placeholder="Enter value for rainfall" />
+        </div>
+        <div class="form-control">
+            <label for="w" id="label-role">
+                Water level<p style="color: red; display:inline;">*</p>
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="low">low</option>
+                <option value="medium">medium</option>
+                <option value="high">
+                    high
+                </option>
+            
+            </select>
+        </div>
+  
+  
+        <!-- Multi-line Text Input Control -->
+        <center><button type="submit" value="Predict">
+            Predict!
+        </button></center>
+    </form>
+   
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="feedback.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.jpeg">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+   
+    <title>Cropify</title>
+</head>
+  
+<body>
+    <nav class="navbar">
+       
+        <p style="font-size: 32px;">Cropify.in</p>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="predict.html">Predict</a></li>
+            <li><a href="construction.html">Dictionary</a></li>
+            <li><a href="home.html#con">Contact</a></li>
+            <li><a href="feedback.html" id="x">Feedback</a></li>
+          </div>
+        </ul>
+      </nav>
+  
+    <!-- Create Form -->
+    <form id="form" action="vali.php" method="post">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name       <p style="color: red; display:inline;">*</p>
+            </label>
+     
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name" 
+                   placeholder="Enter your name" required/>
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email       <p style="color: red; display:inline;">*</p>
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" required/>
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age       <p style="color: red; display:inline;">*</p>
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?<p style="color: red; display:inline;">*</p>
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role" required>
+                <option value="student">Student</option>
+                <option value="farmer">farmer</option>
+                <option value="Public">
+                    Public
+                </option>
+                <option value="other">Others</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+                Would you recommend Cropify
+                to a farmer?       <p style="color: red; display:inline;">*</p>
+            </label>
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Maybe</input>
+            </label>
+        </div>
+  
+        <div class="form-control">
+            <label>Issues that tou faced
+                <small>(Check all that apply)</small>       <p style="color: red; display:inline;">*</p>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Wrong Prediction</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">poor Response</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Poor User friendliness</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Payment Issues</input></label>
+        </div>
+  
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions to improve
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <center><button type="submit" value="submit">
+            Submit
+        </button></center>
+    </form>
+</body>
+  
+</html>
